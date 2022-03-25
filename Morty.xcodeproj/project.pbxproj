@@ -1,0 +1,579 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		341EF1FA27EA64D900E57FB6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341EF1F927EA64D900E57FB6 /* AppDelegate.swift */; };
+		341EF1FC27EA64D900E57FB6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341EF1FB27EA64D900E57FB6 /* SceneDelegate.swift */; };
+		341EF1FE27EA64D900E57FB6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341EF1FD27EA64D900E57FB6 /* HomeViewController.swift */; };
+		341EF20127EA64D900E57FB6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 341EF1FF27EA64D900E57FB6 /* Main.storyboard */; };
+		341EF20327EA64D900E57FB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 341EF20227EA64D900E57FB6 /* Assets.xcassets */; };
+		341EF20627EA64D900E57FB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 341EF20427EA64D900E57FB6 /* LaunchScreen.storyboard */; };
+		341EF21527EA6B5E00E57FB6 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341EF21427EA6B5E00E57FB6 /* API.swift */; };
+		341EF21727EB068100E57FB6 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341EF21627EB068100E57FB6 /* Network.swift */; };
+		341EF21927EB2C8000E57FB6 /* MainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341EF21827EB2C7F00E57FB6 /* MainCell.swift */; };
+		34BEACCF27EC683B00267725 /* LoadingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BEACCE27EC683B00267725 /* LoadingCell.swift */; };
+		34BEACF327ED9BD000267725 /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 34BEACF227ED9BD000267725 /* Apollo */; };
+		34BEACF727ED9BD000267725 /* ApolloAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 34BEACF627ED9BD000267725 /* ApolloAPI */; };
+		34BEACF927ED9BD000267725 /* ApolloCodegenLib in Frameworks */ = {isa = PBXBuildFile; productRef = 34BEACF827ED9BD000267725 /* ApolloCodegenLib */; };
+		34BEACFB27ED9BD000267725 /* ApolloSQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 34BEACFA27ED9BD000267725 /* ApolloSQLite */; };
+		34BEACFD27ED9BD000267725 /* ApolloUtils in Frameworks */ = {isa = PBXBuildFile; productRef = 34BEACFC27ED9BD000267725 /* ApolloUtils */; };
+		34BEACFF27ED9BD000267725 /* ApolloWebSocket in Frameworks */ = {isa = PBXBuildFile; productRef = 34BEACFE27ED9BD000267725 /* ApolloWebSocket */; };
+		E138A17C08C6E969B769D21F /* Pods_Morty.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 302FAAFB7E744773EA5CD742 /* Pods_Morty.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		34BEAD0127ED9E6300267725 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		302FAAFB7E744773EA5CD742 /* Pods_Morty.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Morty.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		341EF1F627EA64D900E57FB6 /* Morty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Morty.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		341EF1F927EA64D900E57FB6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		341EF1FB27EA64D900E57FB6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		341EF1FD27EA64D900E57FB6 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		341EF20027EA64D900E57FB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		341EF20227EA64D900E57FB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		341EF20527EA64D900E57FB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		341EF20727EA64D900E57FB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		341EF21127EA66CC00E57FB6 /* LaunchList.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = LaunchList.graphql; sourceTree = "<group>"; };
+		341EF21327EA680D00E57FB6 /* schema.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = schema.json; sourceTree = "<group>"; };
+		341EF21427EA6B5E00E57FB6 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		341EF21627EB068100E57FB6 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		341EF21827EB2C7F00E57FB6 /* MainCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCell.swift; sourceTree = "<group>"; };
+		34BEACCE27EC683B00267725 /* LoadingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingCell.swift; sourceTree = "<group>"; };
+		42532963BFF7FB1951AE685E /* Pods-Morty.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Morty.release.xcconfig"; path = "Target Support Files/Pods-Morty/Pods-Morty.release.xcconfig"; sourceTree = "<group>"; };
+		ED4ECC19421D0A2321B43ACC /* Pods-Morty.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Morty.debug.xcconfig"; path = "Target Support Files/Pods-Morty/Pods-Morty.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		341EF1F327EA64D900E57FB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34BEACF927ED9BD000267725 /* ApolloCodegenLib in Frameworks */,
+				E138A17C08C6E969B769D21F /* Pods_Morty.framework in Frameworks */,
+				34BEACF327ED9BD000267725 /* Apollo in Frameworks */,
+				34BEACF727ED9BD000267725 /* ApolloAPI in Frameworks */,
+				34BEACFD27ED9BD000267725 /* ApolloUtils in Frameworks */,
+				34BEACFF27ED9BD000267725 /* ApolloWebSocket in Frameworks */,
+				34BEACFB27ED9BD000267725 /* ApolloSQLite in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		021A5913C19D3AC7E3ECDE92 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				302FAAFB7E744773EA5CD742 /* Pods_Morty.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		341EF1ED27EA64D900E57FB6 = {
+			isa = PBXGroup;
+			children = (
+				341EF1F827EA64D900E57FB6 /* Morty */,
+				341EF1F727EA64D900E57FB6 /* Products */,
+				946FCFBD4A10C57C319EEA4C /* Pods */,
+				021A5913C19D3AC7E3ECDE92 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		341EF1F727EA64D900E57FB6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				341EF1F627EA64D900E57FB6 /* Morty.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		341EF1F827EA64D900E57FB6 /* Morty */ = {
+			isa = PBXGroup;
+			children = (
+				34BEACD127EC76D300267725 /* Resources */,
+				34BEACD027EC76A100267725 /* View */,
+				34BEACD227EC774900267725 /* Controller */,
+				341EF1FF27EA64D900E57FB6 /* Main.storyboard */,
+				341EF20727EA64D900E57FB6 /* Info.plist */,
+				341EF21127EA66CC00E57FB6 /* LaunchList.graphql */,
+				341EF21427EA6B5E00E57FB6 /* API.swift */,
+				341EF21327EA680D00E57FB6 /* schema.json */,
+				341EF21627EB068100E57FB6 /* Network.swift */,
+			);
+			path = Morty;
+			sourceTree = "<group>";
+		};
+		34BEACD027EC76A100267725 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				341EF20427EA64D900E57FB6 /* LaunchScreen.storyboard */,
+				341EF21827EB2C7F00E57FB6 /* MainCell.swift */,
+				34BEACCE27EC683B00267725 /* LoadingCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		34BEACD127EC76D300267725 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				341EF20227EA64D900E57FB6 /* Assets.xcassets */,
+				341EF1F927EA64D900E57FB6 /* AppDelegate.swift */,
+				341EF1FB27EA64D900E57FB6 /* SceneDelegate.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		34BEACD227EC774900267725 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				341EF1FD27EA64D900E57FB6 /* HomeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		946FCFBD4A10C57C319EEA4C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ED4ECC19421D0A2321B43ACC /* Pods-Morty.debug.xcconfig */,
+				42532963BFF7FB1951AE685E /* Pods-Morty.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		341EF1F527EA64D900E57FB6 /* Morty */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 341EF20A27EA64D900E57FB6 /* Build configuration list for PBXNativeTarget "Morty" */;
+			buildPhases = (
+				258C1DE948CF3A339A845011 /* [CP] Check Pods Manifest.lock */,
+				341EF21227EA66D800E57FB6 /* Apollo */,
+				341EF1F227EA64D900E57FB6 /* Sources */,
+				341EF1F327EA64D900E57FB6 /* Frameworks */,
+				341EF1F427EA64D900E57FB6 /* Resources */,
+				40F456C396883B371E8ADD16 /* [CP] Embed Pods Frameworks */,
+				34BEAD0127ED9E6300267725 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Morty;
+			packageProductDependencies = (
+				34BEACF227ED9BD000267725 /* Apollo */,
+				34BEACF627ED9BD000267725 /* ApolloAPI */,
+				34BEACF827ED9BD000267725 /* ApolloCodegenLib */,
+				34BEACFA27ED9BD000267725 /* ApolloSQLite */,
+				34BEACFC27ED9BD000267725 /* ApolloUtils */,
+				34BEACFE27ED9BD000267725 /* ApolloWebSocket */,
+			);
+			productName = Morty;
+			productReference = 341EF1F627EA64D900E57FB6 /* Morty.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		341EF1EE27EA64D900E57FB6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					341EF1F527EA64D900E57FB6 = {
+						CreatedOnToolsVersion = 13.3;
+					};
+				};
+			};
+			buildConfigurationList = 341EF1F127EA64D900E57FB6 /* Build configuration list for PBXProject "Morty" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 341EF1ED27EA64D900E57FB6;
+			packageReferences = (
+				34BEACF127ED9BD000267725 /* XCRemoteSwiftPackageReference "apollo-ios" */,
+			);
+			productRefGroup = 341EF1F727EA64D900E57FB6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				341EF1F527EA64D900E57FB6 /* Morty */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		341EF1F427EA64D900E57FB6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				341EF20627EA64D900E57FB6 /* LaunchScreen.storyboard in Resources */,
+				341EF20327EA64D900E57FB6 /* Assets.xcassets in Resources */,
+				341EF20127EA64D900E57FB6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		258C1DE948CF3A339A845011 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Morty-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		341EF21227EA66D800E57FB6 /* Apollo */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Apollo;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Don't run this during index builds\nif [ $ACTION = \"indexbuild\" ]; then exit 0; fi\n\n# Go to the build root and search up the chain to find the Derived Data Path where the source packages are checked out.\nDERIVED_DATA_CANDIDATE=\"${BUILD_ROOT}\"\n\nwhile ! [ -d \"${DERIVED_DATA_CANDIDATE}/SourcePackages\" ]; do\n  if [ \"${DERIVED_DATA_CANDIDATE}\" = / ]; then\n    echo >&2 \"error: Unable to locate SourcePackages directory from BUILD_ROOT: '${BUILD_ROOT}'\"\n    exit 1\n  fi\n\n  DERIVED_DATA_CANDIDATE=\"$(dirname \"${DERIVED_DATA_CANDIDATE}\")\"\ndone\n\n# Grab a reference to the directory where scripts are checked out\nSCRIPT_PATH=\"${DERIVED_DATA_CANDIDATE}/SourcePackages/checkouts/apollo-ios/scripts\"\n\nif [ -z \"${SCRIPT_PATH}\" ]; then\n    echo >&2 \"error: Couldn't find the CLI script in your checked out SPM packages; make sure to add the framework to your project.\"\n    exit 1\nfi\n\ncd \"${SRCROOT}/${TARGET_NAME}\"\n\n#\"${SCRIPT_PATH}\"/run-bundled-codegen.sh schema:download --endpoint=\"https://rickandmortyapi.com/graphql\"\n\n\"${SCRIPT_PATH}\"/run-bundled-codegen.sh codegen:generate --target=swift --includes=./**/*.graphql --localSchemaFile=\"schema.json\" API.swift\n";
+		};
+		40F456C396883B371E8ADD16 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Morty/Pods-Morty-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Morty/Pods-Morty-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Morty/Pods-Morty-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		341EF1F227EA64D900E57FB6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				341EF21727EB068100E57FB6 /* Network.swift in Sources */,
+				341EF1FE27EA64D900E57FB6 /* HomeViewController.swift in Sources */,
+				341EF21927EB2C8000E57FB6 /* MainCell.swift in Sources */,
+				341EF1FA27EA64D900E57FB6 /* AppDelegate.swift in Sources */,
+				34BEACCF27EC683B00267725 /* LoadingCell.swift in Sources */,
+				341EF21527EA6B5E00E57FB6 /* API.swift in Sources */,
+				341EF1FC27EA64D900E57FB6 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		341EF1FF27EA64D900E57FB6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				341EF20027EA64D900E57FB6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		341EF20427EA64D900E57FB6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				341EF20527EA64D900E57FB6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		341EF20827EA64D900E57FB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		341EF20927EA64D900E57FB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		341EF20B27EA64D900E57FB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED4ECC19421D0A2321B43ACC /* Pods-Morty.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 83QEMJQKU6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Morty/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = burakcicek.Morty;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		341EF20C27EA64D900E57FB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42532963BFF7FB1951AE685E /* Pods-Morty.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 83QEMJQKU6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Morty/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = burakcicek.Morty;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		341EF1F127EA64D900E57FB6 /* Build configuration list for PBXProject "Morty" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				341EF20827EA64D900E57FB6 /* Debug */,
+				341EF20927EA64D900E57FB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		341EF20A27EA64D900E57FB6 /* Build configuration list for PBXNativeTarget "Morty" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				341EF20B27EA64D900E57FB6 /* Debug */,
+				341EF20C27EA64D900E57FB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		34BEACF127ED9BD000267725 /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apollographql/apollo-ios.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 0.51.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		34BEACF227ED9BD000267725 /* Apollo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 34BEACF127ED9BD000267725 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = Apollo;
+		};
+		34BEACF627ED9BD000267725 /* ApolloAPI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 34BEACF127ED9BD000267725 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = ApolloAPI;
+		};
+		34BEACF827ED9BD000267725 /* ApolloCodegenLib */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 34BEACF127ED9BD000267725 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = ApolloCodegenLib;
+		};
+		34BEACFA27ED9BD000267725 /* ApolloSQLite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 34BEACF127ED9BD000267725 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = ApolloSQLite;
+		};
+		34BEACFC27ED9BD000267725 /* ApolloUtils */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 34BEACF127ED9BD000267725 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = ApolloUtils;
+		};
+		34BEACFE27ED9BD000267725 /* ApolloWebSocket */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 34BEACF127ED9BD000267725 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = ApolloWebSocket;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 341EF1EE27EA64D900E57FB6 /* Project object */;
+}

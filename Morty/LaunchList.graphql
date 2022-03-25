@@ -1,0 +1,60 @@
+query Characters {
+  characters {
+    info {
+      count
+      pages
+      next
+      prev
+    }
+    results {
+      id
+      name
+      gender
+      location {
+        name
+      }
+      image
+    }
+  }
+}
+
+
+query FilterCharacters($name: String, $page: Int) {
+    characters(page: $page, filter: { name: $name }) {
+        info {
+            next
+      count
+      prev
+      pages
+        }
+  results {
+      id
+      name
+      gender
+      location {
+        name
+      }
+      image
+    }
+}
+}
+
+query AllCharacters($page: Int) {
+    characters(page: $page) {
+        info {
+            next
+      count
+      prev
+      pages
+        }
+  results {
+      id
+      name
+      gender
+      location {
+        name
+      }
+      image
+    }
+    }
+}
